@@ -25,7 +25,7 @@ int mult(int x, int y){
     if (x== 1) return y;
     if (y== 1) return x;
     else {
-        return x + mult(x, y - 1);
+        return suma(x , mult(x, y - 1));
     }
 }
 
@@ -39,6 +39,6 @@ int exp(int x, int y) {
 }
 int main(){
     cout << exp(2, 4) << endl;
-    cout << mult(3, 2) << endl;
+    cout << mult(10, 3) << endl;
     cout << suma(5, 7) << endl;
 }
